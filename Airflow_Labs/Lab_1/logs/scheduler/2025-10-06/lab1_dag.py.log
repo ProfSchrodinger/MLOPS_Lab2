@@ -142,3 +142,10 @@ ModuleNotFoundError: No module named 'airflow.providers.standard'
 [2025-10-06T13:19:22.954+0000] {logging_mixin.py:188} INFO - [2025-10-06T13:19:22.954+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-10-06T13:19:22.965+0000] {logging_mixin.py:188} INFO - [2025-10-06T13:19:22.965+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab1 to 2025-10-06 00:00:00+00:00, run_after=2025-10-07 00:00:00+00:00
 [2025-10-06T13:19:22.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lab1_dag.py took 1.066 seconds
+[2025-10-06T13:19:53.281+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/lab1_dag.py
+[2025-10-06T13:19:53.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lab1_dag.py for tasks to queue
+[2025-10-06T13:19:53.287+0000] {logging_mixin.py:188} INFO - [2025-10-06T13:19:53.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lab1_dag.py
+[2025-10-06T13:19:53.990+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab1' retrieved from /opt/airflow/dags/lab1_dag.py
+[2025-10-06T13:19:54.008+0000] {logging_mixin.py:188} INFO - [2025-10-06T13:19:54.008+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-06T13:19:54.016+0000] {logging_mixin.py:188} INFO - [2025-10-06T13:19:54.016+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab1 to 2025-10-06 00:00:00+00:00, run_after=2025-10-07 00:00:00+00:00
+[2025-10-06T13:19:54.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lab1_dag.py took 0.754 seconds
