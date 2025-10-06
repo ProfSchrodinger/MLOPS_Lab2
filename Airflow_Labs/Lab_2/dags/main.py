@@ -7,8 +7,7 @@ from airflow.providers.standard.operators.bash import BashOperator
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.providers.smtp.operators.smtp import EmailOperator
 from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
-# from airflow.task.trigger_rule import TriggerRule
-from airflow.utils.trigger_rule import TriggerRule
+from airflow.task.trigger_rule import TriggerRule
 
 from src.model_development import (
     load_data,
@@ -40,13 +39,13 @@ dag = DAG(
 owner_task = BashOperator(
     task_id="task_using_linked_owner",
     bash_command="echo 1",
-    owner="Sabari",
+    owner="Ramin Mohammadi",
     dag=dag,
 )
 
 send_email = EmailOperator(
     task_id="send_email",
-    to="sabarimathavan24@gmail.com",
+    to="rey.mhmmd@gmail.com",
     subject="Notification from Airflow",
     html_content="<p>This is a notification email sent from Airflow.</p>",
     dag=dag,
