@@ -1,0 +1,118 @@
+[2025-10-06T21:32:06.629+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-10-06T21:32:06.629+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-10-06T21:32:06.630+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-10-06T21:32:06.631+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-06T21:32:06.649+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-06T21:32:06.766+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/main.py                      41  0.08s             0           0
+/opt/airflow/dags/Flask_API.py                                       0           0
+/opt/airflow/dags/src/model_development.py     42  0.06s             0           0
+================================================================================
+[2025-10-06T21:32:37.176+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  1.61s           2025-10-06T21:32:08
+/opt/airflow/dags/main.py                      51  0.04s             0           1  0.11s           2025-10-06T21:32:06
+/opt/airflow/dags/Flask_API.py                 52  0.01s             0           1  0.05s           2025-10-06T21:32:06
+================================================================================
+[2025-10-06T21:33:07.615+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.27s           2025-10-06T21:32:39
+/opt/airflow/dags/main.py                      61  0.03s             0           1  0.11s           2025-10-06T21:32:37
+/opt/airflow/dags/Flask_API.py                 62  0.01s             0           1  0.08s           2025-10-06T21:32:37
+================================================================================
+[2025-10-06T21:33:37.991+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.28s           2025-10-06T21:33:09
+/opt/airflow/dags/main.py                      71  0.02s             0           1  0.10s           2025-10-06T21:33:07
+/opt/airflow/dags/Flask_API.py                 72  0.00s             0           1  0.07s           2025-10-06T21:33:07
+================================================================================
+[2025-10-06T21:34:08.404+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.21s           2025-10-06T21:33:40
+/opt/airflow/dags/main.py                      81  0.02s             0           1  0.09s           2025-10-06T21:33:38
+/opt/airflow/dags/Flask_API.py                 82  0.01s             0           1  0.07s           2025-10-06T21:33:38
+================================================================================
+[2025-10-06T21:34:38.775+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.61s           2025-10-06T21:34:11
+/opt/airflow/dags/main.py                      91  0.03s             0           1  0.07s           2025-10-06T21:34:08
+/opt/airflow/dags/Flask_API.py                 92  0.00s             0           1  0.06s           2025-10-06T21:34:08
+================================================================================
+[2025-10-06T21:35:09.250+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.24s           2025-10-06T21:34:42
+/opt/airflow/dags/main.py                     101  0.05s             0           1  0.12s           2025-10-06T21:34:38
+/opt/airflow/dags/Flask_API.py                102  0.02s             0           1  0.10s           2025-10-06T21:34:38
+================================================================================
+[2025-10-06T21:35:39.654+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.27s           2025-10-06T21:35:12
+/opt/airflow/dags/main.py                     111  0.03s             0           1  0.12s           2025-10-06T21:35:09
+/opt/airflow/dags/Flask_API.py                112  0.00s             0           1  0.08s           2025-10-06T21:35:09
+================================================================================
+[2025-10-06T21:36:10.225+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.26s           2025-10-06T21:35:42
+/opt/airflow/dags/main.py                     121  0.04s             0           1  0.08s           2025-10-06T21:35:39
+/opt/airflow/dags/Flask_API.py                122  0.01s             0           1  0.05s           2025-10-06T21:35:39
+================================================================================
+[2025-10-06T21:36:40.785+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.31s           2025-10-06T21:36:13
+/opt/airflow/dags/main.py                     131  0.08s             0           1  0.14s           2025-10-06T21:36:10
+/opt/airflow/dags/Flask_API.py                132  0.02s             0           1  0.11s           2025-10-06T21:36:10
+================================================================================
+[2025-10-06T21:37:07.137+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-10-06T21:37:07.159+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-10-06T21:37:11.284+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/model_development.py                           0           1  0.22s           2025-10-06T21:36:44
+/opt/airflow/dags/main.py                     141  0.02s             0           1  0.16s           2025-10-06T21:36:40
+/opt/airflow/dags/Flask_API.py                142  0.01s             0           1  0.10s           2025-10-06T21:36:40
+================================================================================
+[2025-10-06T21:37:23.780+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
