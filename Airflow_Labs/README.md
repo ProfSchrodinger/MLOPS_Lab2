@@ -2,9 +2,9 @@
 
 Implemented Lab1 and Lab2 of Airflow.
 Made changes to Lab2 
->>> Used heart disease dataset
->>> Created a Random Forest model to classify the datasets
->>> Changed codes accordingly to make use of the new model
+1. Used heart disease dataset
+2. Created a Random Forest model to classify the datasets
+3. Changed codes accordingly to make use of the new model
 
 
 # What is Airflow™?
