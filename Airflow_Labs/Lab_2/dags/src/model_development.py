@@ -1,11 +1,10 @@
-import pandas as pd
 import os
 import pickle
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.compose import make_column_transformer
+import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
 
 # Load data from a CSV file
 def load_data():
@@ -15,39 +14,46 @@ def load_data():
     Returns:
         bytes: Serialized data.
     """
-    data = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/advertising.csv"))
+    data = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(__file__)), "data/heart.csv"))
     return data
 
 # Preprocess the data
 def data_preprocessing(data):
-    X = data.drop(['Timestamp', 'Clicked on Ad', 'Ad Topic Line', 'Country', 'City'], axis=1)
-    y = data['Clicked on Ad']
-
-    # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-    num_columns = ['Daily Time Spent on Site', 'Age', 'Area Income', 'Daily Internet Usage', 'Male']
-
-    # Define a column transformer for preprocessing
-    ct = make_column_transformer(
-        (MinMaxScaler(), num_columns),
-        (StandardScaler(), num_columns),
-        remainder='passthrough'
+    y = data['target']
+    X = data.drop(columns=['target'])
+    
+    numeric_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+    categorical_cols = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']
+    
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.3, random_state=42, stratify=y
     )
-
-    # Transform the training and testing data
-    X_train = ct.fit_transform(X_train)
-    X_test = ct.transform(X_test)
-
-    return X_train, X_test, y_train.values, y_test.values
+    
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=True), categorical_cols),
+        ],
+        remainder='passthrough'  # keeps numeric columns as-is (no scaling needed for trees)
+    )
+    
+    X_train = preprocessor.fit_transform(X_train)
+    X_test = preprocessor.transform(X_test)
+    
+    return (X_train, X_test, y_train.values, y_test.values, preprocessor)
 
 # Build and save a logistic regression model
 def build_model(data, filename):
-    X_train, X_test, y_train, y_test = data
-
-    # Create and train a logistic regression model with the best parameters
-    lr_clf = LogisticRegression()
-    lr_clf.fit(X_train, y_train)
+    X_train, X_test, y_train, y_test, _ = data
+    
+    rf = RandomForestClassifier(
+        n_estimators=300,
+        max_depth=None,
+        min_samples_split=2,
+        min_samples_leaf=1,
+        n_jobs=-1,
+        random_state=42
+    )
+    rf.fit(X_train, y_train)
 
     # Ensure the directory exists
     output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model")
@@ -57,24 +63,28 @@ def build_model(data, filename):
     output_path = os.path.join(output_dir, filename)
     
     # Save the trained model to a file
-    pickle.dump(lr_clf, open(output_path, 'wb'))
+    with open(output_path, 'wb') as f:
+        pickle.dump(rf, f)
 
 
 # Load a saved logistic regression model and evaluate it
 def load_model(data, filename):
-    X_train, X_test, y_train, y_test = data
+    X_train, X_test, y_train, y_test, _ = data
     output_path = os.path.join(os.path.dirname(__file__), "../model", filename)
-    # Load the saved model from a file
-    loaded_model = pickle.load(open(output_path, 'rb'))
+    
+    with open(output_path, 'rb') as f:
+        loaded_model = pickle.load(f)
 
     # Make predictions on the test data and print the model's score
-    predictions = loaded_model.predict(X_test)
-    print(f"Model score on test data: {loaded_model.score(X_test, y_test)}")
+    score = loaded_model.score(X_test, y_test)
+    print(f"RandomForest accuracy on test data: {score:.4f}")
 
+    predictions = loaded_model.predict(X_test)
     return predictions[0]
 
 
 if __name__ == '__main__':
     x = load_data()
-    x = data_preprocessing(x)
-    build_model(x, 'model.sav')
+    prepped = data_preprocessing(x)
+    build_model(prepped, 'rfmodel.sav')
+    _ = load_model(prepped, 'rfmodel.sav')
