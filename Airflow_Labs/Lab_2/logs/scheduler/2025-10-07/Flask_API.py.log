@@ -1,0 +1,85 @@
+[2025-10-07T00:21:14.935+0000] {processor.py:161} INFO - Started process (PID=88) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:21:14.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:21:14.944+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:14.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:21:15.068+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:21:15.674+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.672+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:21:15.689+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.688+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:21:15.698+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.698+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:21:15.699+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.698+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:21:15.722+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.722+0000] {dag.py:3118} INFO - Creating ORM DAG for Airflow_Lab2_Flask
+[2025-10-07T00:21:15.724+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:21:15.724+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:21:15.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.832 seconds
+[2025-10-07T00:24:23.139+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:23.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:24:23.165+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:23.231+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:23.582+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.581+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:24:23.589+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.589+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:24:23.592+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.592+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:Airflow_Lab2_Flask
+[2025-10-07T00:24:23.593+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.593+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:24:23.610+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.609+0000] {dag.py:3118} INFO - Creating ORM DAG for Airflow_Lab2_Flask
+[2025-10-07T00:24:23.610+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:23.610+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:24:23.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.515 seconds
+[2025-10-07T00:24:54.647+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:54.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:24:54.655+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:54.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:54.691+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:24:54.970+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:54.969+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:24:54.991+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:24:54.991+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:24:55.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.387 seconds
+[2025-10-07T00:25:25.389+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:25.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:25:25.404+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:25.403+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:25.504+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:25.781+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:25.781+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:25:25.799+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:25.799+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:25:25.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.450 seconds
+[2025-10-07T00:25:56.559+0000] {processor.py:161} INFO - Started process (PID=147) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:56.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:25:56.564+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:56.563+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:56.617+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:25:56.782+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:56.781+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:25:56.801+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:25:56.800+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:25:56.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.268 seconds
+[2025-10-07T00:29:59.493+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:29:59.499+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:29:59.536+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:29:59.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:29:59.720+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:30:00.669+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:30:00.668+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:30:00.714+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:30:00.714+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:30:00.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 1.357 seconds
+[2025-10-07T00:30:31.107+0000] {processor.py:161} INFO - Started process (PID=104) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:30:31.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:30:31.158+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:30:31.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:30:31.340+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:30:31.632+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:30:31.632+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:30:31.643+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:30:31.643+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:30:31.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.595 seconds
+[2025-10-07T00:31:02.001+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:02.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:31:02.019+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:02.018+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:02.130+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:02.870+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:02.867+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:31:03.055+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:03.053+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:31:03.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 1.218 seconds
+[2025-10-07T00:31:34.249+0000] {processor.py:161} INFO - Started process (PID=136) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:34.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:31:34.345+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:34.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:34.627+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:31:35.674+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:35.672+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:31:35.744+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:31:35.744+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:31:35.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 1.899 seconds
+[2025-10-07T00:32:06.417+0000] {processor.py:161} INFO - Started process (PID=143) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:06.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:32:06.430+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:06.428+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:06.490+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:06.638+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:06.638+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:32:06.651+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:06.651+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:32:06.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.268 seconds
+[2025-10-07T00:32:36.988+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:36.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Flask_API.py for tasks to queue
+[2025-10-07T00:32:36.992+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:36.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:37.012+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2_Flask' retrieved from /opt/airflow/dags/Flask_API.py
+[2025-10-07T00:32:37.098+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:37.098+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T00:32:37.105+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:32:37.105+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2_Flask to None, run_after=None
+[2025-10-07T00:32:37.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Flask_API.py took 0.135 seconds
