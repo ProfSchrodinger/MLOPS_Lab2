@@ -1,3 +1,12 @@
+# Implemented and changes made
+
+Implemented Lab1 and Lab2 of Airflow.
+Made changes to Lab2 
+>>> Used heart disease dataset
+>>> Created a Random Forest model to classify the datasets
+>>> Changed codes accordingly to make use of the new model
+
+
 # What is Airflow™?
 
 Apache Airflow™ is an open-source platform for developing, scheduling, and monitoring batch-oriented workflows. Airflow’s extensible Python framework enables you to build workflows connecting with virtually any technology. A web interface helps manage the state of your workflows. Airflow is deployable in many ways, varying from a single process on your laptop to a distributed setup to support even the biggest workflows.
