@@ -2151,3 +2151,4 @@ File Path                       PID    Runtime      # DAGs    # Errors  Last Run
 /opt/airflow/dags/main.py                                1           0  0.82s           2025-10-07T01:21:47
 /opt/airflow/dags/Flask_API.py                           1           0  0.34s           2025-10-07T01:21:37
 ================================================================================
+[2025-10-07T01:22:13.797+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
