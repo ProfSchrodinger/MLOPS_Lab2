@@ -346,3 +346,10 @@ ModuleNotFoundError: No module named 'Airflow_Labs'
 [2025-10-07T01:21:16.450+0000] {logging_mixin.py:188} INFO - [2025-10-07T01:21:16.447+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-10-07T01:21:16.462+0000] {logging_mixin.py:188} INFO - [2025-10-07T01:21:16.462+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2 to 2025-10-08 00:00:00+00:00, run_after=2025-10-09 00:00:00+00:00
 [2025-10-07T01:21:16.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.051 seconds
+[2025-10-07T01:21:46.950+0000] {processor.py:161} INFO - Started process (PID=346) to work on /opt/airflow/dags/main.py
+[2025-10-07T01:21:46.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2025-10-07T01:21:46.957+0000] {logging_mixin.py:188} INFO - [2025-10-07T01:21:46.957+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2025-10-07T01:21:47.648+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab2' retrieved from /opt/airflow/dags/main.py
+[2025-10-07T01:21:47.708+0000] {logging_mixin.py:188} INFO - [2025-10-07T01:21:47.708+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-07T01:21:47.719+0000] {logging_mixin.py:188} INFO - [2025-10-07T01:21:47.718+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab2 to 2025-10-08 00:00:00+00:00, run_after=2025-10-09 00:00:00+00:00
+[2025-10-07T01:21:47.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.786 seconds
